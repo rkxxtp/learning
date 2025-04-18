@@ -20,7 +20,7 @@ body{
 }
 
 .navigation{
-    background-color: rgb(255, 157, 28);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     display: flex;
