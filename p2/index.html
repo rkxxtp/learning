@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    
+    html,body{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav-l h1{
+        font-size: 2rem;
+        color: white;
+    }
+
+    ul a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(242, 142, 12);
+        height: 5rem;
+
+
+    }
+
+    .nav-r{
+        
+        /* background-color: aqua; */
+        height: 70%;
+        width: 50%;
+        margin-top: 1.5rem;
+        margin-left: 2.5rem;
+
+        
+    }
+
+    .nav-r ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateX(19%);
+
+        
+
+
+    }
+
+    .navigation ul{
+        list-style: none;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        color: white;
+        cursor: pointer;
+
+    }
+
+    .list a::after{
+        content: "";
+        background-color: black;
+        height: 6px;
+        width: 100px;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        transform: translate(240px);
+        border-radius: 20px;
+        transform: scaleX(0);
+        transition: transform 2s ;
+
+        
+    }
+
+    .list a:hover::after{
+        transform: scaleX(1);
+        transform: translateX(240px);
+        transform-origin: center;
+
+    }
+
+
+    
+
+    .content{
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100%;
+        height: calc(90% - 5rem);
+    }
+
+    .wrap-content{
+        height: 70%;
+        width: 35%;
+        /* background-color: aquamarine; */
+        border-radius: 20px;
+        /* box-shadow: 10px 10px 70px; */
+        padding: 20px;
+        text-align: center;
+        position:relative;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        
+    }
+
+    .img{
+        background-color: burlywood;
+        height: 10rem;
+        width: 10rem;
+        top: 19%;
+        right: 55%;
+        transform: translateX(70%);
+        position:absolute;
+        font-size: 3rem;
+        border-radius: 50%;
+        background-size: cover;
+
+        
+    }
+
+    img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        transform:translateY(3.8%)
+    }
+
+    
+
+  
+
+    .c1{
+        /* background-color: brown; */
+        height: 60%;
+
+    }
+    
+    .prof-1 h1{
+        font-size: 3rem;
+        color: rgb(155, 112, 55);
+    }
+
+    .c2 p{
+        font-size: 2rem;
+        color: rgb(235, 192, 135);
+
+        
+        
+    }
+
+
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: gray;
+        /* height: calc(100% - 5rem - 90%); */
+        padding: 27px;
+        text-align: center;
+        position: absolute;
+
+        
+    }
+    
+
+
+
+
+</style>
+
+
+
+<body>
+    <div class="navigation">
+        <div class="nav-l"><h1>Assignment</h1></div>
+        <div class="nav-r">
+            <ul>
+                <li class="l1 list"><a href="#">home</a></li>
+                <li class="l2 list"><a href="./contact.html">contacts</a></li>
+                <li class="l3 list"><a href="#">About</a></li>
+                <li class="l4 list"><a href="#">login</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div class="content">
+        <div class="wrap-content">
+
+            <div class="c1">
+
+            <div class="prof-1">
+                <h1>Student's profile</h1>
+
+                <div class="img">
+                    <img src="Screenshot 2025-04-17 201021.png" alt="b-img">
+                    
+                </div>
+
+            </div>
+        </div>
+
+        
+
+            <div class="c2">
+                <p>Name : Tung tung sahur</p>
+                <p>Course : B.Tech</p>
+                <p> Sem : 4th</p>
+
+                
+
+            </div>
+            
+
+            
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy Tung | All Rights Reserved</p>
+        
+    </footer>
+
+
+
+</body>
+</html>
