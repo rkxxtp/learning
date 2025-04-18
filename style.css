@@ -20,7 +20,7 @@ body{
 }
 
 .navigation{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 157, 28);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     display: flex;
@@ -35,7 +35,7 @@ body{
 .navigation h1{
     font-size: 3rem;
     /* margin-left: 30px; */
-    color: white;
+    color: rgb(0, 0, 0);
 
 }
 
@@ -76,7 +76,6 @@ a:hover::after{
     padding: 80px;
     font-size: 20px;
     color: rgb(215, 255, 242);
-    height: auto;
 }
 
 footer{
